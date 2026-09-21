@@ -48,5 +48,5 @@ python main.py
 - quantidade de visitados e expandidos;
 - troca entre heurística original e modificada.
 
-### Observação sobre o repositório
-A atividade pede um link de GitHub ou equivalente. Este pacote está pronto para ser enviado a um repositório. Depois de publicar, substitua o campo **[INSERIR LINK DO REPOSITÓRIO]** no relatório.
+
+
