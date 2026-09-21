@@ -1,0 +1,104 @@
+================================================================================
+EXECUÇÃO - HEURÍSTICA ORIGINAL
+================================================================================
+Origem: Base de Atendimento
+Destino: Hospital Central
+Desempate: ordem alfabética
+
+PASSO 1
+Candidatos antes: Base de Atendimento h=14
+Selecionado: Base de Atendimento (h=14)
+Novos estados: Centro, Parque Municipal, Rodoviária
+Disponíveis depois: Parque Municipal h=7, Centro h=10, Rodoviária h=12
+Próximo escolhido: Parque Municipal h=7
+
+PASSO 2
+Candidatos antes: Parque Municipal h=7, Centro h=10, Rodoviária h=12
+Selecionado: Parque Municipal (h=7)
+Novos estados: Terminal Norte, Universidade
+Disponíveis depois: Universidade h=5, Terminal Norte h=8, Centro h=10, Rodoviária h=12
+Próximo escolhido: Universidade h=5
+
+PASSO 3
+Candidatos antes: Universidade h=5, Terminal Norte h=8, Centro h=10, Rodoviária h=12
+Selecionado: Universidade (h=5)
+Novos estados: Beco Histórico, Ponte Central, Shopping
+Disponíveis depois: Beco Histórico h=2, Ponte Central h=3, Shopping h=6, Terminal Norte h=8, Centro h=10, Rodoviária h=12
+Próximo escolhido: Beco Histórico h=2
+
+PASSO 4
+Candidatos antes: Beco Histórico h=2, Ponte Central h=3, Shopping h=6, Terminal Norte h=8, Centro h=10, Rodoviária h=12
+Selecionado: Beco Histórico (h=2)
+Novos estados: nenhum
+Disponíveis depois: Ponte Central h=3, Shopping h=6, Terminal Norte h=8, Centro h=10, Rodoviária h=12
+Próximo escolhido: Ponte Central h=3
+
+PASSO 5
+Candidatos antes: Ponte Central h=3, Shopping h=6, Terminal Norte h=8, Centro h=10, Rodoviária h=12
+Selecionado: Ponte Central (h=3)
+Novos estados: Aeroporto, Hospital Central, Praça Central
+Disponíveis depois: Hospital Central h=0, Praça Central h=4, Aeroporto h=6, Shopping h=6, Terminal Norte h=8, Centro h=10, Rodoviária h=12
+Próximo escolhido: Hospital Central h=0
+
+PASSO 6
+Candidatos antes: Hospital Central h=0, Praça Central h=4, Aeroporto h=6, Shopping h=6, Terminal Norte h=8, Centro h=10, Rodoviária h=12
+Selecionado: Hospital Central (h=0)
+Objetivo encontrado.
+
+RESULTADO FINAL
+--------------------------------------------------------------------------------
+Ordem de visita: Base de Atendimento -> Centro -> Parque Municipal -> Rodoviária -> Terminal Norte -> Universidade -> Beco Histórico -> Ponte Central -> Shopping -> Aeroporto -> Hospital Central -> Praça Central
+Ordem de expansão: Base de Atendimento -> Parque Municipal -> Universidade -> Beco Histórico -> Ponte Central
+Caminho encontrado: Base de Atendimento -> Parque Municipal -> Universidade -> Ponte Central -> Hospital Central
+Quantidade de estados visitados: 12
+Quantidade de estados expandidos: 5
+
+
+
+================================================================================
+EXECUÇÃO - HEURÍSTICA MODIFICADA
+================================================================================
+Origem: Base de Atendimento
+Destino: Hospital Central
+Desempate: ordem alfabética
+
+PASSO 1
+Candidatos antes: Base de Atendimento h=14
+Selecionado: Base de Atendimento (h=14)
+Novos estados: Centro, Parque Municipal, Rodoviária
+Disponíveis depois: Centro h=4, Rodoviária h=12, Parque Municipal h=13
+Próximo escolhido: Centro h=4
+
+PASSO 2
+Candidatos antes: Centro h=4, Rodoviária h=12, Parque Municipal h=13
+Selecionado: Centro (h=4)
+Novos estados: Praça Central, Shopping, Universidade
+Disponíveis depois: Praça Central h=4, Shopping h=6, Universidade h=11, Rodoviária h=12, Parque Municipal h=13
+Próximo escolhido: Praça Central h=4
+
+PASSO 3
+Candidatos antes: Praça Central h=4, Shopping h=6, Universidade h=11, Rodoviária h=12, Parque Municipal h=13
+Selecionado: Praça Central (h=4)
+Novos estados: Ponte Central
+Disponíveis depois: Ponte Central h=3, Shopping h=6, Universidade h=11, Rodoviária h=12, Parque Municipal h=13
+Próximo escolhido: Ponte Central h=3
+
+PASSO 4
+Candidatos antes: Ponte Central h=3, Shopping h=6, Universidade h=11, Rodoviária h=12, Parque Municipal h=13
+Selecionado: Ponte Central (h=3)
+Novos estados: Aeroporto, Hospital Central, Terminal Norte
+Disponíveis depois: Hospital Central h=0, Aeroporto h=6, Shopping h=6, Terminal Norte h=8, Universidade h=11, Rodoviária h=12, Parque Municipal h=13
+Próximo escolhido: Hospital Central h=0
+
+PASSO 5
+Candidatos antes: Hospital Central h=0, Aeroporto h=6, Shopping h=6, Terminal Norte h=8, Universidade h=11, Rodoviária h=12, Parque Municipal h=13
+Selecionado: Hospital Central (h=0)
+Objetivo encontrado.
+
+RESULTADO FINAL
+--------------------------------------------------------------------------------
+Ordem de visita: Base de Atendimento -> Centro -> Parque Municipal -> Rodoviária -> Praça Central -> Shopping -> Universidade -> Ponte Central -> Aeroporto -> Hospital Central -> Terminal Norte
+Ordem de expansão: Base de Atendimento -> Centro -> Praça Central -> Ponte Central
+Caminho encontrado: Base de Atendimento -> Centro -> Praça Central -> Ponte Central -> Hospital Central
+Quantidade de estados visitados: 11
+Quantidade de estados expandidos: 4
